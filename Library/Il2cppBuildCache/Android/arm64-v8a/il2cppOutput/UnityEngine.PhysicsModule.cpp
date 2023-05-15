@@ -26,6 +26,8 @@ struct BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5;
 struct CharacterController_tCCF68621C784CCB3391E0C66FE134F6F93DD6C2E;
 // UnityEngine.Collider
 struct Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02;
+// UnityEngine.Collision
+struct Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0;
 // UnityEngine.Component
 struct Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684;
 // UnityEngine.Mesh
@@ -1596,6 +1598,22 @@ IL2CPP_EXTERN_C void Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_marshal
 // Conversion method for clean up from marshalling of: UnityEngine.Collision
 IL2CPP_EXTERN_C void Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_marshal_com_cleanup(Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_marshaled_com& marshaled)
 {
+}
+// UnityEngine.Collider UnityEngine.Collision::get_collider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8 (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method)
+{
+	Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * V_0 = NULL;
+	{
+		Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * L_0 = __this->get_m_Collider_3();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * L_1 = V_0;
+		return L_1;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
