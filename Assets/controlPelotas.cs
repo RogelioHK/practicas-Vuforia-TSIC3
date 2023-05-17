@@ -4,19 +4,41 @@ using UnityEngine;
 
 public class controlPelotas : MonoBehaviour
 {
-    public GameObject pelotas;
-    public Transform posicionInicial;
+    [SerializeField]
+    private Transform location;
+    [SerializeField]
+    private GameObject prefabSphere;
+    private GameObject sphere;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Backspace)) {
-            Instantiate(pelotas, posicionInicial);
-        }
+        if (sphere == null)
+        //{
+            sphere = Instantiate(prefabSphere, location) as GameObject;
+            //sphere.transform.position = new Vector3((float)-0.47, (float)0.026, (float)-0.494);
+        //}
     }
 }
+    // Update is called once per frame
+
+
+    //void OnTriggerEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("PuntoFinal"))
+    //    {
+    //        Destroy(currentSphere);
+
+    //        currentSphere = Instantiate(spherePrefab, regenerationPosition, Quaternion.identity);
+    //        // Configura el collider y el Rigidbody de la esfera regenerada
+    //    }
+    //}
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Pierde"))
+    //    {
+    //        Destroy(currentSphere);
+
+    //        currentSphere = Instantiate(spherePrefab, regenerationPosition, Quaternion.identity);
+    //    }
+    //}

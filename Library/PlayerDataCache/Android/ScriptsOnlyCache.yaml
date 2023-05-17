@@ -2,7 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ChangeColor
-    - Rotate
+    - comportamientoPelota
+    - controlPelotas
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -18,7 +19,7 @@ ScriptsOnlyBuild:
     - DefaultInitializationErrorHandler
     - DefaultTrackableEventHandler
   sceneClasses:
-    Assets/Scenes/practica6.unity:
+    Assets/Scenes/practica8.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -37,6 +38,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -52,11 +57,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 2110}
+      Script: {instanceID: 2104}
     - Class: 114
       Script: {instanceID: 2214}
     - Class: 114
       Script: {instanceID: 2808}
+    - Class: 114
+      Script: {instanceID: 2842}
     - Class: 114
       Script: {instanceID: 3800}
     - Class: 114
@@ -65,9 +72,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3852}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1962,5 +1973,5 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 13
   scenePathNames:
-  - Assets/Scenes/practica6.unity
-  playerPath: C:/Users/roghe/VR/Vuforia/PracticasVuforia/practicas-Vuforia-TSIC3/practica7RogelioHernandez.apk
+  - Assets/Scenes/practica8.unity
+  playerPath: C:/Users/roghe/VR/Vuforia/PracticasVuforia/practicas-Vuforia-TSIC3/practica8RogelioHernandez.apk

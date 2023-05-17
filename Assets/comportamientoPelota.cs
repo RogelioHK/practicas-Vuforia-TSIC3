@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class comportamientoPelota : MonoBehaviour
-{
-
-    public void onColisionEnter(Collision collision) {
-        /*if (collision.collider.name == "Pierde") {
+public class comportamientoPelota : MonoBehaviour{
+    private void OnTriggerEnter(Collider other){
+        if (other.CompareTag("Pierde")){
             Destroy(this.gameObject);
+            Debug.Log("PIERDE");
+        }
 
-        }*/
-
-        if (collision.collider.name == "PF") {
-            this.gameObject.GetComponent<Renderer>().material.color = Color.red;
+        if (other.CompareTag("PuntoFinal")){
+            this.gameObject.GetComponent<Renderer>().material.color = Color.green;
+            Debug.Log("PUNTO FINAL");
         }
     }
 
-    public void OnCollisionExit(Collision collision)
-    {
-        this.gameObject.GetComponent<Renderer>().material.color = Color.gray;
+    private void OnTriggerExit(Collider other){
+        if (other.CompareTag("PuntoFinal")){
+            this.gameObject.GetComponent<Renderer>().material.color = Color.red;
+            Debug.Log("OUT PUNTO FINAL");
+        }
     }
     // Start is called before the first frame update
     void Start()

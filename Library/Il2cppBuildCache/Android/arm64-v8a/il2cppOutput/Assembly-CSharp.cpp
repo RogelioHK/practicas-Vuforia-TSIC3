@@ -1853,8 +1853,6 @@ inline Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * GameObject_GetCompon
 {
 	return ((  Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * (*) (GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_mCE43118393A796C759AC5D43257AB2330881767D_gshared)(__this, method);
 }
-// UnityEngine.Color UnityEngine.Color::get_gray()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  Color_get_gray_mC7DF17400DA07010DDEAACD5551C7CF7A2A7C450 (const RuntimeMethod* method);
 // System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_m806A477EAE0AE49AA9C5E518A0800A3D80D873DC (int32_t ___key0, const RuntimeMethod* method);
 // !!0 UnityEngine.Object::Instantiate<UnityEngine.GameObject>(!!0,UnityEngine.Transform)
@@ -2233,7 +2231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void comportamientoPelota_OnCollisionExit_m80
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.gameObject.GetComponent<Renderer>().material.color = Color.gray;
+		// this.gameObject.GetComponent<Renderer>().material.color = Color.green;
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0;
 		L_0 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(__this, /*hidden argument*/NULL);
 		NullCheck(L_0);
@@ -2243,7 +2241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void comportamientoPelota_OnCollisionExit_m80
 		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_2;
 		L_2 = Renderer_get_material_mE6B01125502D08EE0D6DFE2EAEC064AD9BB31804(L_1, /*hidden argument*/NULL);
 		Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  L_3;
-		L_3 = Color_get_gray_mC7DF17400DA07010DDEAACD5551C7CF7A2A7C450(/*hidden argument*/NULL);
+		L_3 = Color_get_green_m787119A4B2078DAB30985625CA7B3B0FF6099FF5(/*hidden argument*/NULL);
 		NullCheck(L_2);
 		Material_set_color_mC3C88E2389B7132EBF3EB0D1F040545176B795C0(L_2, L_3, /*hidden argument*/NULL);
 		// }
