@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ChangeColor
     - comportamientoPelota
     - controlPelotas
     Unity.Rider.Editor.dll:
@@ -58,8 +57,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1786}
     - Class: 114
       Script: {instanceID: 2104}
-    - Class: 114
-      Script: {instanceID: 2214}
     - Class: 114
       Script: {instanceID: 2808}
     - Class: 114
@@ -545,7 +542,7 @@ ScriptsOnlyBuild:
     className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
-      Hash: f821cd4cf2e68ee955e8c6d14de31fb8
+      Hash: 44ca2cf6ede4fc357b8eff600e666f91
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: controlPelotas
